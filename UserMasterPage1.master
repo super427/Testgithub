@@ -1,0 +1,150 @@
+﻿<%@ Master Language="C#" AutoEventWireup="true" CodeFile="MasterPage.master.cs" Inherits="MasterPage" %>
+
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html lang="en-US" xmlns="http://www.w3.org/1999/xhtml" dir="ltr">
+<head id="Head1" runat="server">
+	<title>SWAG YOUR EYES</title>
+	<meta http-equiv="Content-type"  content="text/html; charset=utf-8" />
+	<link rel="shortcut icon" href="css/images/favicon.ico" />
+	<link rel="stylesheet" href="css/style.css" type="text/css" media="all" />
+	<script src="js/jquery-1.7.min.js" type="text/javascript"></script>
+	<script src="js/jquery.jcarousel.js" type="text/javascript"></script>
+	<script src="js/DD_belatedPNG-min.js" type="text/javascript"></script>
+	<script src="js/cufon-yui.js" type="text/javascript"></script>	
+	<script src="js/Tahoma_400-Tahoma_700.font.js" type="text/javascript"></script>
+	<script src="js/functions.js" type="text/javascript"></script>		
+    <style type="text/css">
+        #x {
+            width: 1147px;
+        }
+    </style>
+</head>
+<body>
+	<!-- Wrapper -->
+	<div id="wrapper">
+		<div class="shell">
+			<!-- Header -->
+			<div id="header">
+				<!-- Logo -->
+				<img src="logo1.png" style="height: 64px; width: 272px"/>
+				<!-- Navigation -->
+				<div id="navigation">
+					<ul>
+						<li><a title="Home" href="#">Home<span></span></a></li>
+						<li><a title="Collection" href="#">Collection<span></span></a></li>
+						<li><a title="Contactus" href="#">Contact Us<span></span></a></li>
+						<li><a title=" About Us" href="#">About Us<span></span></a></li>
+                        <%--<li><a title="Login" href="#">Login<span></span></a></li>--%>
+					</ul>
+				</div>
+				<!-- END Navigation -->
+				<div class="cl"></div>
+				<div id="cart">
+					<p><a title="Registration" href="Registration.aspx">Registration</a></p>
+                    <%--<p><a title="login" href="#">Login</a></p>--%>
+				</div>
+			</div>
+            <div class="cl"></div>
+				<div id="cart">
+					<p><a title="login" href="userlogin.aspx">Login</a></p>	
+		</div>
+
+		<!-- END Header -->
+		<!-- Main -->
+		<script>
+		    var a = 0, y, z;
+		    function test1() {
+		        a = a + 1;
+		        z = document.getElementById("x");
+		        switch (a) {
+		            case 1:
+		                z.src = "image/banners/6.jpg"
+		                break;
+		            case 2:
+		                z.src = "image/banners/1.jpg"
+		                break;
+		            case 3:
+		                z.src = "image/banners/4.jpg"
+		                break;
+		            case 4:
+		                z.src = "image/banners/7.jpg"
+		                break;
+		            case 5:
+		                z.src = "image/banners/Contact-Lens-11.jpg"
+		                break;
+
+		                case6:
+		                    z.src = "image/banners/img1.jpg"
+		                break;
+		        }
+
+		        if (a == 6) {
+		            a = 0;
+		        }
+		    }
+
+		    function test2() {
+		        setInterval("test1()", 2000)
+
+		    }
+</script>	
+                         <body onload="test2()">
+                             <div name=h1 >
+                                 <img Id="x" src="image/banners/6.jpg" height="150px">
+                                 </div>
+                             </body>
+			<!-- END Slider Holder -->
+
+    <!-- Featured Items -->
+			<div class="items">
+				<div class="shell">
+					<!-- Products -->
+					<div class="products">
+						<asp:ContentPlaceHolder ID="ContentPlaceHolder1" runat="server">
+                          
+                        </asp:ContentPlaceHolder>
+								</div>										
+								
+					</div>
+			</div>
+			<!-- END Featured Items -->
+			<!-- Bestsellers -->
+
+                        </div>
+		
+	<!-- END Wrapper -->
+	<!-- Footer -->
+	<%--<div id="footer">
+		<div class="shell">
+            
+			<div id="bottom-logo"><a title="home" href="http://css-free-templates.com/">Bottom logo</a></div>
+			<p>Copyright &copy; Company Name 2012. All Rights Reserved. Design by: <a href="http://css-free-templates.com/">CSS Free Templates</a></p>
+			<div class="cl"></div>
+		</div>
+	</div>
+	<!-- END Footer -->
+    </div>--%>
+    <p>
+        &nbsp;</p>
+    <p>
+        &nbsp;</p>
+    <p>
+        &nbsp;</p>
+    <p>
+        &nbsp;</p>
+    <p>
+        &nbsp;</p>
+    <p>
+        &nbsp;</p>
+    <%--<p><marquee>
+                            <img src="image/sunglasses images/stylish.jpg" height="100" width="100" alt="sunglass" />
+                         
+                           <img src="image/sunglasses images/blue aviator.jpg" height="100" width="100"  alt="sunglass" />
+                            <img src="image/sunglasses images/red kids.jpg" height="100" width="100" alt="sunglass"/>
+                            <img src="image/sunglasses images/parrot kids.jpg" height="100" width="100" alt="sunglass"/>
+                        </marquee>
+        &nbsp;</p>--%>
+    <p>
+        &nbsp;</p>
+</body>	
+</html>
